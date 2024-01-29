@@ -63,7 +63,7 @@ function calculateTax() {
     document.body.removeChild(spinnerContainer);
     progressBar.style.width = '0';
 
-    displayResult(`Tax to be paid (${currentTab}): $${tax.toFixed(2)}`);
+    displayResult(`Tax to be paid (${currentTab}): $${tax.toFixed(0)}`);
   }, 1500); // Simulating a delay for a more noticeable spinner effect
 }
 
@@ -89,7 +89,7 @@ function displayResult(result) {
 //15 - 20 Lakh: 25% Tax 
 //Above 20 Lakh: 30% Tax
 
-//Up to 2.5 Lakh: 3.75% Tax 
-//2.5 - 3.75 Lakh: 5% Tax 
-//3.75 - 5 Lakh: 6.25% Tax 
-//Above 5 Lakh: 7.5% Tax
+//Up to 2.5 Lakh: 15% Tax 
+//2.5 - 3.75 Lakh: 20% Tax 
+//3.75 - 5 Lakh: 25% Tax 
+//Above 5 Lakh: 30% Tax
